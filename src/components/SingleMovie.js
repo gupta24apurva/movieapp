@@ -27,7 +27,7 @@ const SingleMovie = () => {
   };
   useEffect(() => {
     let timerout = setTimeout(() => {
-      getMovies(`${API_URL}?i=${id}&apikey=${process.env.REACT_APP_API_KEY}`);
+      getMovies(`${API_URL}?i=${id}&apikey=578cc606`);
     }, 500);
     return () => clearTimeout(timerout);
   }, [id]);
@@ -39,7 +39,7 @@ const SingleMovie = () => {
   else{
   return (
     <>
-      <div className="card" style={{width: "40rem", flexDirection:"row", margin:"110px auto"}}>
+      <div className="card" style={{width: "40rem", flexDirection:"row", margin:"90px auto"}}>
         <img src={movie.Poster} className="card-img" alt="..." style={{width: "40%", marginRight:"20px"}}/>
           <div className="card-body">
             <h3 className="card-title">{movie.Title}</h3>
