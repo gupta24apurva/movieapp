@@ -22,7 +22,7 @@ const Movies = () => {
               <>
               <NavLink to={`movie/${imdbID}`} key={imdbID}>
               <div className="card mx-2 my-2" style={{width: "18rem", border: "2px solid black", borderRadius: "15px", padding: "30px", backgroundColor:"#D3D3D3"}}>
-                <img src={Poster} className="card-img-top" style={{height:"300px"}}/>
+                <img src={Poster} alt="..." className="card-img-top" style={{height:"300px"}}/>
                   <div className="card-body">
                     <h5 className="card-title" style={{textAlign:"center"}}>{Title.length>15?`${movieName}...`:movieName}</h5>
                   </div>
